@@ -18,7 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+function first (arr) {
+  return(arr[0])
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -31,7 +33,9 @@ var arr = [40,50,60];
   Create a function named 'last' that is given 'arr' as an argument. 
   Return the last item in the given array.
 */
-
+function last(arr) {
+  return(arr[2])
+}
 //Code Here
 
 
@@ -48,7 +52,10 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper(family) { 
+  for (let i = 0; i <family.length; i++)
+  alert(family[i])
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,7 +70,10 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper (letters) {
+  for (let i = letters.length - 1; i >= 0; i--)
+  alert(letters[i])
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -78,8 +88,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+function evenFinder(nums) {
+  let arr = [];
+  for (let i = 0; i < nums.length; i++) {
+    if(nums[i] % 2 === 0)
+    arr.push(nums[i])
+  }
+  return arr; 
+}
 
-
+  
 
 
 
@@ -108,7 +126,18 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 //Code Here
 
-
+function divider(numbersArray) {
+  let newArray = [[], []];
+  for(let i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] % 2 === 0) {
+     newArray[0].push(numbersArray[i]) 
+    }
+    else {
+     newArray[1].push(numbersArray[i])
+    }
+  }
+     return newArray
+}; 
 
 ////////// PROBLEM 7 //////////
 
@@ -130,7 +159,10 @@ var getRandomArbitrary = function() {
 
 //Code Here
 
-
+function finder([]) {
+  let randomNumber = getRandomArbitrary()
+  for (let i = 0; i < finder.length; i++) 
+}
 
 ////////// PROBLEM 8 //////////
 
